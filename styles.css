@@ -1,0 +1,298 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo sup {
+    font-size: 12px;
+    color: #a7c0ff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a7c0ff;
+}
+
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #182848;
+    margin-bottom: 30px;
+}
+
+.task-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.task-prompt {
+    font-size: 16px;
+    color: #777;
+    margin-top: 0;
+}
+
+.task-text {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 30px 0;
+}
+
+.answer-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#user-answer {
+    width: 60%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#user-answer:focus {
+    outline: none;
+    border-color: #4b6cb7;
+}
+
+#submit-btn {
+    padding: 12px 25px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submit-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.feedback .correct {
+    color: #28a745;
+}
+
+.feedback .incorrect {
+    color: #dc3545;
+}
+
+.progress-section {
+    margin-top: 50px;
+}
+
+.progress-bar-container {
+    background-color: #e9ecef;
+    border-radius: 20px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #56ab2f, #a8e063); /* Зеленый градиент */
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: #444;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.skill-status-icon {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.skill-mastered .skill-status-icon {
+    color: #28a745;
+}
+
+.skill-in-progress .skill-status-icon {
+    color: #ffc107;
+}
+
+.skill-todo .skill-status-icon {
+    color: #ced4da;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #888;
+}
+
+/* --- ДОБАВЛЕННЫЕ СТИЛИ --- */
+
+/* Класс для скрытия неактивных страниц */
+.hidden {
+    display: none;
+}
+
+/* Стиль для активной ссылки в навигации */
+nav a.active {
+    color: #a7c0ff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Стили для страницы профиля */
+.profile-card {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #4b6cb7;
+}
+
+.profile-btn, .profile-btn-logout {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 10px 5px 0;
+    transition: all 0.3s ease;
+}
+
+.profile-btn {
+    background-color: #4b6cb7;
+    color: white;
+}
+.profile-btn:hover {
+    background-color: #182848;
+}
+
+.profile-btn-logout {
+    background-color: #f8f9fa;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.profile-btn-logout:hover {
+     background-color: #dc3545;
+     color: white;
+}
+
+
+/* Стили для страницы статистики */
+.stats-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.stats-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.stats-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-chart {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f7f9;
+    border-radius: 8px;
+    color: #777;
+}

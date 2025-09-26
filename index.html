@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLearn | ЕГЭ математика </title>
+    <link rel="icon" href="images/ainura.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">EasyLearn | Репетитор <sup>AI</sup></h1>
+            <nav>
+                <ul>
+                    <!-- Добавлены data-атрибуты для JS и класс active для первой ссылки -->
+                    <li><a href="#" class="active" data-page="trainer">Тренажер</a></li>
+                    <li><a href="#" data-page="profile">Профиль</a></li>
+                    <li><a href="#" data-page="stats">Статистика</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <!-- СТРАНИЦА "ТРЕНАЖЕР" -->
+            <div id="trainer-page" class="page-section">
+                <section class="trainer-section">
+                    <h2>Задание №12: Тригонометрические уравнения</h2>
+                    
+                    <div class="task-card">
+                        <p class="task-prompt">Решите уравнение:</p>
+                        <p class="task-text">2 sin(x) - √2 = 0</p>
+                        
+                        <div class="answer-form">
+                            <input type="text" id="user-answer" placeholder="Введите ваш ответ здесь...">
+                            <button id="submit-btn">Проверить</button>
+                        </div>
+                        
+                        <div id="feedback" class="feedback"></div>
+                    </div>
+                </section>
+
+                <section class="progress-section">
+                    <h2>Ваш прогресс</h2>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                        <span class="progress-label">Освоено: 20%</span>
+                    </div>
+
+                    <h3>Профиль знаний по теме уравнений:</h3>
+                    <ul class="skills-list">
+                        <li class="skill-mastered"><span class="skill-name">Иррациональные</span><span class="skill-status-icon">✓</span></li>
+                        <li class="skill-mastered"><span class="skill-name">Рациональные</span><span class="skill-status-icon">✓</span></li>
+                        <li class="skill-in-progress"><span class="skill-name">Тригонометрические</span><span class="skill-status-icon">•</span></li>
+                        <li class="skill-todo"><span class="skill-name">Логарифмические</span><span class="skill-status-icon">•</span></li>
+                        <li class="skill-todo"><span class="skill-name">Показательные</span><span class="skill-status-icon">•</span></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- СТРАНИЦА "ПРОФИЛЬ" (по умолчанию скрыта) -->
+            <section id="profile-page" class="page-section hidden">
+                <h2>Профиль пользователя</h2>
+                <div class="task-card profile-card">
+                    <img src="images/ainura.jpg" alt="Аватар пользователя" class="avatar">
+                    <h3>Слава Мерлов</h3>
+                    <p><strong>Email:</strong> slava.merlov@list.ru</p>
+                    <p><strong>Дата регистрации:</strong> 03.04.2025</p>
+                    <button class="profile-btn">Редактировать профиль</button>
+                    <button class="profile-btn-logout">Выйти</button>
+                </div>
+            </section>
+
+            <!-- СТРАНИЦА "СТАТИСТИКА" (по умолчанию скрыта) -->
+            <section id="stats-page" class="page-section hidden">
+                <h2>Общая статистика</h2>
+                <div class="task-card stats-card">
+                    <h3>Ключевые показатели</h3>
+                    <ul class="stats-list">
+                        <li>Решено заданий: <strong>125</strong></li>
+                        <li>Правильных ответов: <strong>98 (78%)</strong></li>
+                        <li>Среднее время на задание: <strong>2 мин 15 сек</strong></li>
+                        <li>Лучшая тема: <strong>Рациональные уравнения (95%)</strong></li>
+                        <li>Нужно подтянуть: <strong>Тригонометрия (45%)</strong></li>
+                    </ul>
+                    <h3>Активность за неделю</h3>
+                    <div class="activity-chart">
+                        <p>(Здесь может быть график вашей активности)</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EasyLearn | Репетитор <sup>AI</sup> Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <!-- Подключаем наш скрипт -->
+    <script src="script.js"></script>
+
+</body>
+</html>
