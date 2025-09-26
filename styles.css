@@ -215,21 +215,16 @@ footer {
     color: #888;
 }
 
-/* --- ДОБАВЛЕННЫЕ СТИЛИ --- */
-
-/* Класс для скрытия неактивных страниц */
 .hidden {
     display: none;
 }
 
-/* Стиль для активной ссылки в навигации */
 nav a.active {
     color: #a7c0ff;
     text-decoration: underline;
     text-underline-offset: 4px;
 }
 
-/* Стили для страницы профиля */
 .profile-card {
     text-align: center;
 }
@@ -271,8 +266,6 @@ nav a.active {
      color: white;
 }
 
-
-/* Стили для страницы статистики */
 .stats-list {
     list-style: none;
     padding: 0;
@@ -295,4 +288,5 @@ nav a.active {
     background-color: #f4f7f9;
     border-radius: 8px;
     color: #777;
+
 }
