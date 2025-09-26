@@ -153,7 +153,7 @@ h2 {
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, #56ab2f, #a8e063); /* Зеленый градиент */
+    background: linear-gradient(90deg, #56ab2f, #a8e063); 
     height: 100%;
     border-radius: 20px;
     transition: width 0.5s ease-in-out;
@@ -290,3 +290,4 @@ nav a.active {
     color: #777;
 
 }
+
