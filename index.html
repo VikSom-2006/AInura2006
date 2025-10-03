@@ -17,7 +17,6 @@
             <h1 class="logo">EasyLearn | Репетитор <sup>AI</sup></h1>
             <nav>
                 <ul>
-                    
                     <li><a href="#" class="active" data-page="trainer">Тренажер</a></li>
                     <li><a href="#" data-page="profile">Профиль</a></li>
                     <li><a href="#" data-page="stats">Статистика</a></li>
@@ -42,6 +41,7 @@
                             <button id="submit-btn">Проверить</button>
                         </div>
                         
+                        <!-- Элемент для вывода результата проверки -->
                         <div id="feedback" class="feedback"></div>
                     </div>
                 </section>
@@ -64,18 +64,20 @@
                 </section>
             </div>
 
+            
             <section id="profile-page" class="page-section hidden">
                 <h2>Профиль пользователя</h2>
                 <div class="task-card profile-card">
                     <img src="images/ainura.jpg" alt="Аватар пользователя" class="avatar">
                     <h3>Слава Мерлов</h3>
-                    <p><strong>Email:</strong> slava.merlov@list.ru</p>
-                    <p><strong>Дата регистрации:</strong> 03.04.2025</p>
+                    <p><strong>Email:</strong> alex.smirnov@example.com</p>
+                    <p><strong>Дата регистрации:</strong> 01.09.2024</p>
                     <button class="profile-btn">Редактировать профиль</button>
                     <button class="profile-btn-logout">Выйти</button>
                 </div>
             </section>
 
+            
             <section id="stats-page" class="page-section hidden">
                 <h2>Общая статистика</h2>
                 <div class="task-card stats-card">
@@ -100,11 +102,22 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 EasyLearn | Репетитор <sup>AI</sup> Все права защищены.</p>
+
+            
+            <div class="rating-section">
+                <h3>Оцените проект</h3>
+                <div class="stars">
+                    <span data-value="1">★</span><span data-value="2">★</span><span data-value="3">★</span><span data-value="4">★</span><span data-value="5">★</span>
+                </div>
+                <p id="rating-feedback"></p>
+            </div>
+            
+
         </div>
     </footer>
     
     <script src="script.js"></script>
 
 </body>
-
 </html>
+
